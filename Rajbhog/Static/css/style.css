@@ -1,0 +1,279 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 100px;
+    background-color: #ffeae0;
+    background-size: cover;
+}
+
+/* ------menu-------*/
+
+.nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.nav .logo h1{
+    font-weight: 600 ;
+    font-family: sans-serif ;
+    color: black;
+}
+
+.nav .logo b{
+    color: #ff511c;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li{
+    margin-right: 30px;
+}
+
+.nav ul li a{
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.nav ul li a:hover{
+    color: #ff511c;
+
+}
+
+
+
+
+/* ------current-------*/
+
+.nav ul .current::after{
+    content: '';
+    width: 50%;
+    height: 3px;
+    background-color: #ff511c;
+    display: flex;
+    position: relative;
+    margin-left: 10px;
+}
+
+/* ------input-------*/
+input{
+    padding: 10px 20px;
+    font-weight: 500;
+    
+    cursor: pointer;
+}
+
+.signin{
+    background-color: transparent;
+    border: none;
+}
+
+.signup{
+    background-color: #ff511c ;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    
+}
+
+/*------content-----*/
+
+.content b{
+    color: #ff511c;
+    font-size: larger;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 50% auto;
+    align-items: center;
+    gap: 30px;
+    margin-top: 100px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .content-1{
+    display: block;
+    width: 100%;
+
+}
+
+.content .content-1 .info{
+    max-width :100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-1 .info h2{
+    font-size: 60px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.content .content-1 .info p{
+    font-size: 23px;
+    line-height: 2pc;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+}
+
+.content .content-1 button{
+    padding: 10px 23px;
+    background-color: #ff511c;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    
+}
+.content .content-1 button:hover{
+    background-color: black;
+    color: white ;
+}
+
+
+/*------content2(image section)-----*/
+
+.content .content-2{
+    width: 100%;
+    display: block;
+}
+
+.content .content-2{
+    width: 500px;
+    height: 500px;
+    animation: rotate 30s linear infinite;
+    background-size: contain;
+    background-repeat: no-repeat;
+ 
+}
+/*------content2(social media section)-----*/
+.social-media{
+    position: absolute;
+    align-content: center;
+    display: flex;
+   justify-content: flex-start;
+    height:40px; 
+    width: 200px;
+    font-size: 25px;
+    right:25%;
+    margin-top: 10px;
+}
+
+.social-media i:hover{
+    color: #ff511c;
+    opacity: 50%;
+}
+
+.social-media i{
+    list-style: none;
+    margin: 0 15px;
+
+}
+
+
+
+
+ 
+/*------content2(animation)-----*/
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        background-image: url('/Rajbhog/Static/Image/panner2.png');
+    }
+    50%{
+        transform: rotate(180deg);
+        background-image: url('/Rajbhog/Static/Image/dal\ makkni.png');
+    }
+    100%{
+        transform: rotate(360def);
+        background-image: url('/Rajbhog/Static/Image/chana.png');   
+    }
+   
+}
+
+/*------category-----*/
+
+.category{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.category .items{
+    width: 90%;
+    position: relative;
+   margin-top: 100px;
+}
+
+.category .items h3{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-bottom: 70px;
+}
+
+.category .items .dish-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.category .dish-list .dish1{
+    width: 200px;
+    height: auto;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    outline: 2px solid #faad96;
+}
+.category .dish-list .dish1 img{
+    width: 100px;
+    height: auto;
+    bottom: 140px;
+    object-fit: cover;
+    object-position: center;
+    left: 50px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.category .dish-list .dish1 .dish-name{
+    padding: 40px 0 10px;
+}
+
+.category .dish-list .dish1 .dish-name h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.category .dish1 .dish-desc1 p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 200px;
+    font-family: sans-serif;
+}
+
+.category .dish1 .dish-pp1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
