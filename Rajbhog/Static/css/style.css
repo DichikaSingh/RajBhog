@@ -97,12 +97,12 @@ input{
 
 .content{
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 40% 40% 20%;
     align-items: center;
     gap: 30px;
     margin-top: 100px;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
 }
 
 .content .content-1{
@@ -160,19 +160,13 @@ input{
  
 }
 /*------content2(social media section)-----*/
-.social-media{
-    position: absolute;
-    align-content: center;
-    display: flex;
-   justify-content: flex-start;
-    height:40px; 
-    width: 200px;
-    font-size: 25px;
-    right:25%;
-    margin-top: 10px;
+.content-3{
+   display: flex;
+   flex-direction: column;
+   gap: 10vh;
 }
 
-.social-media i:hover{
+.content-3 i:hover{
     color: #ff511c;
     opacity: 50%;
 }
@@ -192,15 +186,15 @@ input{
 @keyframes rotate {
     0%{
         transform: rotate(0deg);
-        background-image: url('/Rajbhog/Static/Image/panner2.png');
+        background-image: url('../image/panner2.png');
     }
     50%{
         transform: rotate(180deg);
-        background-image: url('/Rajbhog/Static/Image/dal\ makkni.png');
+        background-image: url('../image/dalmakkni.png');
     }
     100%{
         transform: rotate(360def);
-        background-image: url('/Rajbhog/Static/Image/chana.png');   
+        background-image: url('../image/chana.png');   
     }
    
 }
@@ -229,32 +223,36 @@ input{
 .category .items .dish-list{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    margin-bottom: 30vh;
 }
 .category .dish-list .dish1{
     width: 200px;
-    height: auto;
-    display: block;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
     border-radius: 10px;
     background-color: white;
     outline: 2px solid #faad96;
+    margin-bottom: auto;
+    margin-top: auto;
+    position: relative;
+    
 }
-.category .dish-list .dish1 img{
-    width: 100px;
-    height: auto;
-    bottom: 140px;
+.category .dish-list .dish1 .img{
+    width: 100%;
+    height: 130px;
     object-fit: cover;
     object-position: center;
-    left: 50px;
-    position: absolute;
     background-repeat: no-repeat;
 }
 
-.category .dish-list .dish1 .dish-name{
-    padding: 40px 0 10px;
-}
 
-.category .dish-list .dish1 .dish-name h1{
+
+.category .dish-list .dish1 .dish-name1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
@@ -265,14 +263,23 @@ input{
     font-size: 13px;
     text-align: center;
     font-weight: 500;
-    margin-bottom: 200px;
     font-family: sans-serif;
+    margin-bottom: auto;
 }
 
-.category .dish1 .dish-pp1{
+.category .dish1 .dish-pp1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    bottom: 15px;
+
+}
+.category .dish1 .dish-pp1 .price-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
 }
 
 
